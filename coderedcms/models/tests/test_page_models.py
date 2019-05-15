@@ -49,7 +49,7 @@ class BasicPageTestCase():
         request.user = AnonymousUser()
         request.site = Site.objects.all()[0]
         response = self.basic_page.serve(request)
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 201)
 
 class AbstractPageTestCase():
     """
